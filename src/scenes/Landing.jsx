@@ -1,11 +1,11 @@
-import React from "react";
-import useMediaQuery from "../hooks/useMediaQuery";
-import { motion } from "framer-motion";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import React from 'react';
+import useMediaQuery from '../hooks/useMediaQuery';
+import { motion } from 'framer-motion';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const Landing = ({ setSelectedPage }) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
   return (
     <section
       id="home"
@@ -13,16 +13,16 @@ const Landing = ({ setSelectedPage }) => {
       {/* image section*/}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
-          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
+          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[450px] before:w-full before:max-w-[450px] before:h-full before:border-2 before:border-blue before:z-[-1]">
             <img
-              src="assets/profile-image   -2.png"
+              src="assets/me.jpeg"
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full rounded-t-[450px] max-w-[400px] md:max-w-[450px]"
             />
           </div>
         ) : (
           <img
-            src="assets/profile-image  -2.png"
+            src="assets/me.jpeg"
             alt="profile"
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
           />
@@ -40,7 +40,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}>
           <p className="text-6xl font-playfair z-10 text-center md:text-center">
-            Yaroslav {""}
+            Yaroslav
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
                  before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]">
@@ -48,8 +48,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+            Experienced, detailed-oriented, front-end web developer.
           </p>
         </motion.div>
         <motion.div
@@ -65,13 +64,13 @@ const Landing = ({ setSelectedPage }) => {
           <AnchorLink
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue
                    hover:text-white transition duration-500"
-            onClick={() => setSelectedPage("contact")}
+            onClick={() => setSelectedPage('contact')}
             href="#contact">
             Contact Me
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
+            onClick={() => setSelectedPage('contact')}
             href="#contact">
             <div
               className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex 
