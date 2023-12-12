@@ -15,20 +15,22 @@ const projectVariant = {
 };
 
 const Project = ({ title }) => {
-  const overlayStyles = `hover:cursor-pointer absolute h-full w-full opacity-0 hover:opacity-90 transition
+  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition
     duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-          viverra malesuada sem
-        </p>
-      </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+    <motion.div variants={projectVariant} className="relative w-[400px]">
+      <a href="https://messanger-godlikes-projects.vercel.app/" target="_blank">
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair">{title}</p>
+          <p className="mt-7">
+            Stay connected anytime, anywhere, and make every conversation
+            memorable with our dynamic chat experience.
+          </p>
+        </div>
+        <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
+      </a>
     </motion.div>
   );
 };
@@ -74,14 +76,14 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
           <Project title="Project 1" />
-          <Project title="Project 2" />
+          {/* <Project title="Project 2" />
 
           <Project title="Project 3" />
           <Project title="Project 4" />
           <Project title="Project 5" />
 
           <Project title="Project 6" />
-          <Project title="Project 7" />
+          <Project title="Project 7" /> */}
 
           <div
             className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px]
