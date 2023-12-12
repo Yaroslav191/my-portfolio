@@ -90,6 +90,13 @@ const Projects = () => {
             }
             link={"https://sharemey.netlify.app/"}
           />
+          <Project
+            title="Project 3"
+            text={
+              "Step into a world of seamless organization and enhanced productivity with our custom Trello application."
+            }
+            link={"https://trello-87jdtt6z7-godlikes-projects.vercel.app/"}
+          />
 
           <div
             className="flex justify-center text-center items-center p-10 bg-blue w-[350px] md:w-[400px] h-[400px]
