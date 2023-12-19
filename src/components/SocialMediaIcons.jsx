@@ -18,6 +18,14 @@ const SocialMediaIcons = () => {
         <i className="fa-brands fa-instagram text-4xl"></i>
         {/* <img src="../assets/instagram.png" alt="instagram-link" /> */}
       </a>
+      <a
+        href="https://www.instagram.com/yarosslav__14/"
+        className="hover:opacity-50 transition duration-500 "
+        target="_blank"
+        rel="noreferrer">
+     <i class="fa-brands fa-github text-4xl"></i>
+      </a>
+      
     </div>
   );
 };

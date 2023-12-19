@@ -29,7 +29,7 @@ const Project = ({ title, text, link }) => {
         <img
           src={`../assets/${projectTitle}.png`}
           alt={projectTitle}
-          className="h-[400px] w-[350px] md:w-[400px]"
+          className="h-[400px] w-[350px] md:w-[400px] object-cover object-left"
         />
       </a>
     </motion.div>
